@@ -50,9 +50,9 @@ const Header = (props) => {
 }
 
 // To check if the prop is the correct type of data
-// Header.propTypes = {
-//     score: PropTypes.number,
-//     highScore: PropTypes.number,
-// }
+Header.propTypes = {
+    score: PropTypes.number,
+    highScore: PropTypes.number,
+}
 
 export default Header

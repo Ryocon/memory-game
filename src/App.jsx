@@ -1,11 +1,13 @@
 import './App.css'
 import { useState } from 'react'
 import Header from './components/Header'
+import styled from 'styled-components'
 
 
 
 function App() {
 
+  // state logic
 const [score, setScore] = useState(0) 
 const [highScore, setHighScore] = useState(0)
 const [reset, setReset] = useState(true)
@@ -23,16 +25,22 @@ const restartGame = () => {
   setReset(true)
 }
 
+
+// styling
+
+const Container = styled.div`
+    
+`
+
   return (
-    <>
-    <div>
-      hi
-    </div>
+   <Container>
     <Header 
     score={score}
     highScore={highScore}
     />
-    </>
+   </Container>
+    
+    
   )
 }
 
