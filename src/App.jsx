@@ -8,7 +8,20 @@ function App() {
 
 const [score, setScore] = useState(0) 
 const [highScore, setHighScore] = useState(0)
-// const [reset, setReset] = useState(true)
+const [reset, setReset] = useState(true)
+
+const incrementScore = () => {
+  setScore(() => score + 1)
+  setReset(false)
+}
+
+const restartGame = () => {
+  if (score > highScore) {
+    setHighScore(score)
+  }
+  setScore(0)
+  setReset(true)
+}
 
   return (
     <>
