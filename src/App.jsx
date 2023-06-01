@@ -39,7 +39,11 @@ const Container = styled.div`
     score={score}
     highScore={highScore}
     />
-    <Grid />
+    <Grid 
+    reset={reset}
+    restartGame={restartGame}
+    incrementScore={incrementScore}
+    />
    </Container>
     
     

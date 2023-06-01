@@ -31,7 +31,10 @@ const Grid = (props) => {
     ])
 
     const Container = styled.div`
-    
+    text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 `
 
 
